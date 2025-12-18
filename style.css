@@ -4,7 +4,7 @@ html {
     font-size: 100%;
 }
 body {
-    color: #993399;
+    color: #333333;
     font-family: sans-serif;
 }
 img {
@@ -39,6 +39,7 @@ a:hover {
     padding-bottom: 35px;
     background-color:aqua;
     max-width: 100%;
+    background-color: #000504;
 }
 
 #header .logo {
@@ -206,3 +207,4 @@ a:hover {
     }
 
 }
+
