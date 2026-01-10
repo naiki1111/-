@@ -3,14 +3,16 @@
 html {
     font-size: 100%;
 }
-body {
-    color: #ffffff;
+
+    body {
+        
+            color: #ffffff;
     font-family: sans-serif;
-    /*background-image: url(./私とつむぎ.png);
-    background-repeat: no-repeat;
-    */
+    background-image: url(./タイムカード.png);
     
-}
+    background-repeat: repeat-y;
+    
+    }
 img {
     max-width: 100%;
     vertical-align: bottom;
@@ -241,4 +243,5 @@ a:hover {
         width: 100%;
         margin: 0 0 20px;
     }
+
 }
