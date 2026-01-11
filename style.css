@@ -224,7 +224,7 @@ a:hover {
         padding-top: 25px;
         padding-bottom: 25px;
 
-        max-height: 30px;
+        max-height: 20px;
     }
     #header .logo {
         max-width: 120px;
@@ -250,3 +250,4 @@ a:hover {
         font-size: 10px;
     }
 }
+
