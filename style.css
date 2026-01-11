@@ -223,9 +223,13 @@ a:hover {
     #header {
         padding-top: 25px;
         padding-bottom: 25px;
+
+        max-height: 30px;
     }
     #header .logo {
         max-width: 120px;
+        max-height: 30px;
+        margin-top: -30px;
     }
 
 
@@ -241,5 +245,8 @@ a:hover {
     #works .works-list li {
         width: 100%;
         margin: 0 0 20px;
+    }
+    .navi {
+        font-size: 10px;
     }
 }
