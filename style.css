@@ -145,6 +145,11 @@ a:hover {
 
 
 
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+
 
     body {
         
@@ -160,6 +165,11 @@ a:hover {
         margin-left: 10px;
     }
     
+
+    .logo {
+        max-width: 10px;
+        max-height: 20px;
+    }
     .ccs {
     width: 400px;
     margin-top: 100px
@@ -224,7 +234,7 @@ a:hover {
         padding-top: 25px;
         padding-bottom: 25px;
 
-        max-height: 20px;
+        max-height: 30px;
     }
     #header .logo {
         max-width: 120px;
@@ -246,9 +256,5 @@ a:hover {
         width: 100%;
         margin: 0 0 20px;
     }
-    .navi {
-        font-size: 4px;
-    }
+  
 }
-
-
