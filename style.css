@@ -73,7 +73,7 @@ a:hover {
 }
 
 #header .navi li {
-    font-size: 14px;
+    font-size: 101%;
     margin-left: 40px;
 
 }
@@ -122,6 +122,12 @@ a:hover {
     line-height: 2;
 }
 
+#profile .en {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    text-shadow: rgb(255, 144, 189);
+    color: rgb(255, 207, 134);
+}
 
 
 
