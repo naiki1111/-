@@ -6,9 +6,9 @@ html {
 body {
     color: #ffffff;
     font-family: sans-serif;
-    /*background-image: url(./私とつむぎ.png);
+    background-image: url(私とつむぎ.png);
     background-repeat: no-repeat;
-    */
+    
     
 }
 img {
@@ -151,7 +151,7 @@ a:hover {
         
             color: #ffffff;
     font-family: sans-serif;
-    background-image: url(./タイムカード.png);
+    background-image: url(タイムカード.png);
     
     background-repeat: repeat-y;
     
@@ -198,6 +198,9 @@ a:hover {
         margin-bottom: 20px;
     }
     
+    #footer {
+        max-height: 100%;
+    }
 
 
     .mainvisual {
@@ -230,7 +233,7 @@ a:hover {
         padding-top: 30px;
         padding-bottom: 90px;
 
-        max-height: 30px;
+        max-height: 340px;
         display: block;
         text-align: center;
     }
