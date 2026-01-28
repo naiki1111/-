@@ -1,0 +1,27 @@
+@import url(style.css);
+#abc {
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.abc p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto;
+}
+.detail .en {
+    color: aliceblue;
+    
+}
+.footer {
+
+    max-width: 100%;
+    margin-bottom: auto;
+
+}
+.main {
+    flex: 1;
+}
