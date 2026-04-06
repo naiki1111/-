@@ -253,6 +253,21 @@ body {
   color: #154b91;
 }
 
+.download-jacket {
+  margin: 0;
+  flex: 0 0 min(320px, 34vw);
+  align-self: center;
+}
+
+.download-jacket img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #b5dff5;
+  box-shadow: 0 10px 20px rgba(21, 75, 145, 0.15);
+  object-fit: cover;
+}
+
 .download-spec {
   min-width: 220px;
   padding: 16px;
@@ -345,5 +360,10 @@ body {
   .news-list li {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .download-jacket {
+    width: 100%;
+    max-width: 420px;
   }
 }
