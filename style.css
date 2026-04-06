@@ -1,0 +1,349 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Yu Gothic UI", "Meiryo", sans-serif;
+  background: linear-gradient(180deg, #000000 0%, #d9efff 28%, #ececec 28%, #ececec 100%);
+  color: #333333;
+}
+
+.page {
+  width: min(92vw, 980px);
+  margin: 20px auto;
+}
+
+.site-header,
+.site-footer {
+  margin-bottom: 14px;
+}
+
+.site-header img,
+
+.top-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  padding: 2px;
+  border: 2px solid #ff7373;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ff9f9f;
+  margin-bottom: 18px;
+}
+
+.top-nav a {
+  display: block;
+  text-align: center;
+  padding: 12px 8px;
+  color: #5f4b31;
+  text-decoration: none;
+  font-weight: 700;
+  background: #f8d87a;
+}
+
+.top-nav a:nth-child(1) { background: #8cd6f0; }
+.top-nav a:nth-child(2) { background: #c6ef87; }
+.top-nav a:nth-child(3) { background: #f6de8c; }
+.top-nav a:nth-child(4) { background: #f5b26a; }
+
+.top-nav a.active {
+  outline: 3px solid #f24d54;
+  outline-offset: -3px;
+}
+
+.hero {
+  height: 290px;
+  border: 3px solid #ff7373;
+  border-radius: 10px;
+  background: #e9eef3;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.hero::after {
+  content: none;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  margin: 30px;
+  color: #ffb035;
+  font-weight: 900;
+  font-size: clamp(2.1rem, 4.7vw, 3.2rem);
+  line-height: 1.05;
+  transform: rotate(-8deg);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hero-copy span {
+  display: block;
+  color: #c6ff4d;
+  margin-top: 8px;
+  font-size: clamp(2rem, 4.4vw, 3rem);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  gap: 24px;
+  align-items: start;
+}
+
+.news-box,
+.page-panel {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.news-title,
+.page-title {
+  margin: 0;
+  background: #f24d54;
+  color: #ffffff;
+  font-size: 1.45rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.meta {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #5f6b7a;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px dotted #f08d8d;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.news-list time {
+  font-weight: 700;
+  color: #566372;
+}
+
+.side {
+  display: grid;
+  gap: 14px;
+}
+
+.side-card {
+  border: 3px solid #f08f40;
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 92px;
+  background: linear-gradient(135deg, #fff1dc, #ffd39c);
+  color: #6a4c2f;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.side-link {
+  text-decoration: none;
+}
+
+.side-link small {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+.contact {
+  border: 3px solid #f08f40;
+  border-radius: 10px;
+  background: #f6ad3f;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.page-body {
+  margin: 16px 0 8px;
+  line-height: 1.8;
+}
+
+.section-subtitle {
+  margin: 0 0 12px;
+  color: #154b91;
+  font-size: 1.2rem;
+}
+
+.game-card,
+.download-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: stretch;
+  padding: 20px;
+  border: 2px solid #8cd6f0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8fdff 0%, #e8f7ff 100%);
+}
+
+.game-card-copy,
+.download-summary {
+  flex: 1;
+}
+
+.game-card-label,
+.download-label {
+  margin: 0 0 8px;
+  color: #f24d54;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.game-feature-list {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.primary-link-button,
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f24d54, #ff8f3c);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(242, 77, 84, 0.18);
+}
+
+.download-game-title {
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: #154b91;
+}
+
+.download-spec {
+  min-width: 220px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #b5dff5;
+}
+
+.download-spec p {
+  margin: 0 0 12px;
+}
+
+.download-spec p:last-child {
+  margin-bottom: 0;
+}
+
+.agreement-panel {
+  margin-top: 24px;
+}
+
+.agreement-box {
+  padding: 18px;
+  border: 2px dashed #f5b26a;
+  border-radius: 12px;
+  background: #fffaf0;
+}
+
+.agreement-box p {
+  margin: 0 0 10px;
+}
+
+.agreement-box p:last-child {
+  margin-bottom: 0;
+}
+
+.agreement-form {
+  margin-top: 16px;
+}
+
+.agreement-check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.agreement-check input {
+  width: 18px;
+  height: 18px;
+}
+
+.download-button.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.download-note {
+  margin: 12px 0 0;
+  font-size: 0.95rem;
+  color: #5f6b7a;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 8px;
+  color: #154b91;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 780px) {
+  .top-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+   .game-card,
+   .download-hero {
+    flex-direction: column;
+  }
+
+  .primary-link-button,
+  .download-button {
+    width: 100%;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
